@@ -1,14 +1,23 @@
 class AnthroEnv < Formula
   desc "macOS Anthropic environment profile manager"
   homepage "https://github.com/kelaocai/anthro-env"
-  url "https://github.com/kelaocai/anthro-env/archive/refs/tags/v0.1.1-alpha.tar.gz"
-  sha256 "6337bea23f20aed3a1450d1eb848c5ead4bb521aeb66ce465d538f7886a8d519"
+  version "0.1.3-alpha"
   license "MIT"
 
-  depends_on "go" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/kelaocai/anthro-env/releases/download/v0.1.3-alpha/anthro-env_0.1.3-alpha_macos_arm64.tar.gz"
+      sha256 "9583b53e8399537d9e4ebd564fc629e88c5062844b9e480e1db9e7824377f8cf"
+    end
+
+    on_intel do
+      url "https://github.com/kelaocai/anthro-env/releases/download/v0.1.3-alpha/anthro-env_0.1.3-alpha_macos_x86_64.tar.gz"
+      sha256 "1b7e40d54b1bc079f0b1d4794655c5e320f354df0b63ca1969ac64baba693e70"
+    end
+  end
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/anthro-env"
+    bin.install "anthro-env"
   end
 
   test do
