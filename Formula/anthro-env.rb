@@ -1,18 +1,18 @@
 class AnthroEnv < Formula
   desc "macOS Anthropic environment profile manager"
   homepage "https://github.com/kelaocai/anthro-env"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kelaocai/anthro-env/releases/download/v0.1.4/anthro-env_0.1.4_macos_arm64.tar.gz"
-      sha256 "610886a7cb3cbaf9a5d5e3ae59c9c0e8693f614d18b9fbfa91d883a251804844"
+      url "https://github.com/kelaocai/anthro-env/releases/download/v0.1.5/anthro-env_0.1.5_macos_arm64.tar.gz"
+      sha256 "b45c6e6abb2c73064163b39db8c42c74453739c92f8dc03106ceb7ed5916b2dc"
     end
 
     on_intel do
-      url "https://github.com/kelaocai/anthro-env/releases/download/v0.1.4/anthro-env_0.1.4_macos_x86_64.tar.gz"
-      sha256 "73ef58fb02967c02b198ad79892af5543b34d376db0473aaacfb6e7eaeef296d"
+      url "https://github.com/kelaocai/anthro-env/releases/download/v0.1.5/anthro-env_0.1.5_macos_x86_64.tar.gz"
+      sha256 "4b8afbbb5673bc26c5a9f4d2fae40f2e52051c05d774f57fa54a946d65dd7e94"
     end
   end
 
