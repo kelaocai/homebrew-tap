@@ -1,8 +1,8 @@
 class AnthroEnv < Formula
   desc "macOS Anthropic environment profile manager"
   homepage "https://github.com/kelaocai/anthro-env"
-  url "https://github.com/kelaocai/anthro-env/archive/refs/tags/v0.1.0-alpha.tar.gz"
-  sha256 "336026c1009b5b18a830e17aa15f4806fb9f7f4e04a852e400cbda0ef6337ed3"
+  url "https://github.com/kelaocai/anthro-env/archive/refs/tags/v0.1.1-alpha.tar.gz"
+  sha256 "6337bea23f20aed3a1450d1eb848c5ead4bb521aeb66ce465d538f7886a8d519"
   license "MIT"
 
   depends_on "go" => :build
