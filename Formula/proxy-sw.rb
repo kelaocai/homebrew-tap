@@ -1,18 +1,18 @@
 class ProxySw < Formula
   desc "macOS system proxy manager for local proxy tools like Clash"
   homepage "https://github.com/kelaocai/proxy-sw"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kelaocai/proxy-sw/releases/download/v0.1.1/proxy-sw_0.1.1_macos_arm64.tar.gz"
-      sha256 "395592cb89ef5d5147dd65ff6e2d6a58bd930460705c056f49780a3276567543"
+      url "https://github.com/kelaocai/proxy-sw/releases/download/v0.1.2/proxy-sw_0.1.2_macos_arm64.tar.gz"
+      sha256 "0a6860a6760e42f385fc69aa32ba005e82ac02d97f6a518dbcf5bd421b4312e2"
     end
 
     on_intel do
-      url "https://github.com/kelaocai/proxy-sw/releases/download/v0.1.1/proxy-sw_0.1.1_macos_x86_64.tar.gz"
-      sha256 "7518479c0d70ea11152b8b80ce99b5da977a108cff3a3c12401360a70300b9ef"
+      url "https://github.com/kelaocai/proxy-sw/releases/download/v0.1.2/proxy-sw_0.1.2_macos_x86_64.tar.gz"
+      sha256 "4dd13e43e3c53709a6df621a8c90391cb3230efb4f43b52d0df5eb7758ea1a52"
     end
   end
 
